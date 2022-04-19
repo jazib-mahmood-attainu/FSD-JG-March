@@ -9,6 +9,10 @@ console.log(a);
 
 for(let i = 0;i<=a.length-1;i++)
     console.log(a[i]+10);
+console.log("*****************")
+for (i of a){
+    console.log(i);
+}
 
 a.push(15)
 console.log(a)
