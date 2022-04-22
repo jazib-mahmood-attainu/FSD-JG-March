@@ -34,14 +34,14 @@
 // obj.m()
 // z = obj.m
 // z()
-a = 5
-console.log(this);
+// a = 5
+// console.log(this);
 
-function fun(){
-    console.log(this);
-    console.log(this.a,"***********");
-}
-fun()
+// function fun(){
+//     console.log(this);
+//     console.log(this.a,"***********");
+// }
+// fun()
 
 // const obj1 = {
 //     fname:"Sameer",
@@ -76,3 +76,10 @@ fun()
 // i11 = addsix(20)
 // console.log(i10);
 // console.log(i11);
+// setInterval(() => {
+//     console.log("hello")
+// }, 2000);
+
+console.log(new Date());
+console.log((new Date()).toString());
+console.log(Date());
