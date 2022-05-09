@@ -27,6 +27,7 @@ const BinarySearchUB = function (arr,target){
     l = 0;
     r = arr.length - 1;
     res = -1
+
     while (l<=r){//2<=1
         mid = Math.floor((l+r)/2)
         if(arr[mid]<target){//5<9

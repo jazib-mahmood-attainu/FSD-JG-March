@@ -38,3 +38,5 @@ var countNegatives = function(grid) {
 
 grid = [[3,2],[1,0]]
 console.log(countNegatives(grid))
+
+
