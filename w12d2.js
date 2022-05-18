@@ -12,9 +12,17 @@
 
 // nums = [1,2,3,1,1,3]
 // console.log(numIdenticalPairs(nums))
-obj = {
-    
-}
-s
-
-console.log(obj["k1"]);
+var numIdenticalPairs = function(nums) {
+    map = {}
+    let c= 0
+    for(number of nums){
+        if(map[number]===undefined){
+            map[number] = 1
+        }
+        else{
+            c += map[number]  // c = c+map[number]
+            map[number] += 1
+        }
+    }
+    return c
+};
