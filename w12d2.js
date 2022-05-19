@@ -10,7 +10,7 @@
 //   return c
 // };
 
-// nums = [1,2,3,1,1,3]
+nums = [1,2,3,1,1,3]
 // console.log(numIdenticalPairs(nums))
 var numIdenticalPairs = function(nums) {
     map = {}
@@ -26,3 +26,5 @@ var numIdenticalPairs = function(nums) {
     }
     return c
 };
+
+console.log(nums.__proto__.__proto__);
