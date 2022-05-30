@@ -35,3 +35,32 @@ addNodeAtEnd(head,20)
 head = addNodeAtBeginning(head,2)
 printLL(head)
 
+//Stretch value, MAY 28th test
+function processData(input) {
+    input = input.split("\n")  
+    st = input[1]
+    queries = input.slice(2)
+    // console.log(st,queries)
+    alpha = "abcdefghijklmnopqrstuvwxyz"
+    HT_alpha = {}
+    for(let i = 0;i<alpha.length;i++){
+        if(!(alpha[i] in HT_alpha)){
+            HT_alpha[alpha[i]] = i+1
+        }
+    }
+    
+    R = [HT_alpha[st[0]]]
+    for(let j = 1;j< st.length;j++){
+        R.push(HT_alpha[st[j]]+R[j-1])
+    }
+    // console.log(R)
+    for(t = 0 ;t<queries.length;t++){
+        si = Number(queries[t].split(" ")[0])
+        ei = Number(queries[t].split(" ")[1])
+        if(si!=1){
+            console.log(R[ei-1]-R[si-2])
+        }
+        else
+            console.log(R[ei-1])
+    }
+} 
