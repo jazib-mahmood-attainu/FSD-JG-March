@@ -56,6 +56,7 @@ function mergeLL(head1,head2){
 }
 
 
+
 function reverseLL(head){
     let prev = null;
     cur = head;
